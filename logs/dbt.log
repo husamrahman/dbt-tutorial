@@ -1,0 +1,62 @@
+[0m14:09:51.280616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111160250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ff5e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ff5d10>]}
+
+
+============================== 14:09:51.283828 | 5bbeab85-8afd-4127-9159-bb6f3ecbdb51 ==============================
+[0m14:09:51.283828 [info ] [MainThread]: Running with dbt=1.6.0
+[0m14:09:51.284213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/husamrahman/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init jaffle_shop', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:09:51.285019 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:09:51.290655 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:09:51.290982 [info ] [MainThread]: Setting up your profile.
+[0m14:10:39.370052 [error] [MainThread]: Encountered an error:
+
+[0m14:10:39.378554 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/dbt/cli/requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/dbt/cli/requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/dbt/cli/main.py", line 467, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/dbt/task/init.py", line 307, in run
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/dbt/task/init.py", line 233, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m14:10:39.379843 [debug] [MainThread]: Command `dbt init` failed at 14:10:39.379632 after 48.11 seconds
+[0m14:10:39.380312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110eecf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110eec690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e95d10>]}
+[0m14:10:39.381058 [debug] [MainThread]: Flushing usage events
+[0m14:10:42.902233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f6ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106721a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067faf90>]}
+
+
+============================== 14:10:42.905606 | 4290f6e4-74f2-479b-bf2b-dbf15ecf57ba ==============================
+[0m14:10:42.905606 [info ] [MainThread]: Running with dbt=1.6.0
+[0m14:10:42.906070 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/husamrahman/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init jaffle_shop', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:10:42.906734 [info ] [MainThread]: A project called jaffle_shop already exists here.
+[0m14:10:42.907129 [debug] [MainThread]: Command `dbt init` succeeded at 14:10:42.907051 after 0.02 seconds
+[0m14:10:42.907342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066d7390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066d7010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100d7ee10>]}
+[0m14:10:42.907566 [debug] [MainThread]: Flushing usage events
